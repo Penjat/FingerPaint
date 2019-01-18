@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PaintView.h
 //  FingerPaint
 //
 //  Created by Spencer Symington on 2019-01-18.
@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PaintView : UIView
+
+- (void)clear;
 
 @end
 
+NS_ASSUME_NONNULL_END

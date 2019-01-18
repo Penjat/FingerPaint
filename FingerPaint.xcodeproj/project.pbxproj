@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0B91F5AF21F27D4B002CE536 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5AE21F27D4B002CE536 /* AppDelegate.m */; };
-		0B91F5B221F27D4B002CE536 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5B121F27D4B002CE536 /* ViewController.m */; };
 		0B91F5B521F27D4B002CE536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B91F5B321F27D4B002CE536 /* Main.storyboard */; };
 		0B91F5B721F27D4C002CE536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B91F5B621F27D4C002CE536 /* Assets.xcassets */; };
 		0B91F5BA21F27D4C002CE536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B91F5B821F27D4C002CE536 /* LaunchScreen.storyboard */; };
 		0B91F5BD21F27D4C002CE536 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5BC21F27D4C002CE536 /* main.m */; };
 		0B91F5C721F27D4D002CE536 /* FingerPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5C621F27D4D002CE536 /* FingerPaintTests.m */; };
 		0B91F5D221F27D4D002CE536 /* FingerPaintUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5D121F27D4D002CE536 /* FingerPaintUITests.m */; };
+		0B91F5E121F27D77002CE536 /* PaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5E021F27D77002CE536 /* PaintViewController.m */; };
+		0B91F5E421F27D95002CE536 /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5E321F27D95002CE536 /* PaintView.m */; };
+		0B91F5EA21F281A4002CE536 /* LineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5E921F281A4002CE536 /* LineSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		0B91F5AA21F27D4B002CE536 /* FingerPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B91F5AD21F27D4B002CE536 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B91F5AE21F27D4B002CE536 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0B91F5B021F27D4B002CE536 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B91F5B121F27D4B002CE536 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B91F5B421F27D4B002CE536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B91F5B621F27D4C002CE536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B91F5B921F27D4C002CE536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		0B91F5CD21F27D4D002CE536 /* FingerPaintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerPaintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B91F5D121F27D4D002CE536 /* FingerPaintUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingerPaintUITests.m; sourceTree = "<group>"; };
 		0B91F5D321F27D4D002CE536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B91F5DF21F27D77002CE536 /* PaintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintViewController.h; sourceTree = "<group>"; };
+		0B91F5E021F27D77002CE536 /* PaintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintViewController.m; sourceTree = "<group>"; };
+		0B91F5E221F27D95002CE536 /* PaintView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
+		0B91F5E321F27D95002CE536 /* PaintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
+		0B91F5E821F281A4002CE536 /* LineSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineSegment.h; sourceTree = "<group>"; };
+		0B91F5E921F281A4002CE536 /* LineSegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,12 @@
 			children = (
 				0B91F5AD21F27D4B002CE536 /* AppDelegate.h */,
 				0B91F5AE21F27D4B002CE536 /* AppDelegate.m */,
-				0B91F5B021F27D4B002CE536 /* ViewController.h */,
-				0B91F5B121F27D4B002CE536 /* ViewController.m */,
+				0B91F5DF21F27D77002CE536 /* PaintViewController.h */,
+				0B91F5E021F27D77002CE536 /* PaintViewController.m */,
+				0B91F5E221F27D95002CE536 /* PaintView.h */,
+				0B91F5E321F27D95002CE536 /* PaintView.m */,
+				0B91F5E821F281A4002CE536 /* LineSegment.h */,
+				0B91F5E921F281A4002CE536 /* LineSegment.m */,
 				0B91F5B321F27D4B002CE536 /* Main.storyboard */,
 				0B91F5B621F27D4C002CE536 /* Assets.xcassets */,
 				0B91F5B821F27D4C002CE536 /* LaunchScreen.storyboard */,
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B91F5B221F27D4B002CE536 /* ViewController.m in Sources */,
 				0B91F5BD21F27D4C002CE536 /* main.m in Sources */,
+				0B91F5E421F27D95002CE536 /* PaintView.m in Sources */,
+				0B91F5EA21F281A4002CE536 /* LineSegment.m in Sources */,
+				0B91F5E121F27D77002CE536 /* PaintViewController.m in Sources */,
 				0B91F5AF21F27D4B002CE536 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
