@@ -31,6 +31,11 @@
     self.paintView.greenValue = sender.value;
     [self updateColorPreview ];
 }
+
+- (IBAction)clear {
+    [self.paintView clear];
+}
+
 -(void)updateColorPreview{
     self.colorPreview.backgroundColor = [UIColor colorWithRed:self.paintView.redValue green:self.paintView.greenValue blue:self.paintView.blueValue alpha:1.0];
 }

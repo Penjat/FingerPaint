@@ -61,11 +61,20 @@
                                     <constraint firstAttribute="height" constant="120" id="DSe-6D-MTq"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2D-Sf-MTn">
+                                <rect key="frame" x="279" y="576" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFZ-kH-meI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="S2D-Sf-MTn" firstAttribute="top" secondItem="a5r-XM-Bt3" secondAttribute="bottom" constant="8" id="NL5-dJ-F4v"/>
                             <constraint firstItem="lDL-Nt-7mP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Q0v-Wz-bTw"/>
                             <constraint firstItem="a5r-XM-Bt3" firstAttribute="top" secondItem="lDL-Nt-7mP" secondAttribute="bottom" constant="8" id="Zoe-TM-5SL"/>
+                            <constraint firstItem="S2D-Sf-MTn" firstAttribute="trailing" secondItem="a5r-XM-Bt3" secondAttribute="trailing" id="cYX-8H-jaD"/>
                             <constraint firstItem="a5r-XM-Bt3" firstAttribute="centerX" secondItem="lDL-Nt-7mP" secondAttribute="centerX" id="dzx-0d-cWO"/>
                             <constraint firstItem="lDL-Nt-7mP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hsj-r5-u3w"/>
                             <constraint firstItem="a5r-XM-Bt3" firstAttribute="width" secondItem="lDL-Nt-7mP" secondAttribute="width" multiplier="0.85" id="r4j-TE-Umt"/>
