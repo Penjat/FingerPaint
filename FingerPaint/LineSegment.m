@@ -11,10 +11,12 @@
 @implementation LineSegment
 - (instancetype)initWithFirstPoint:(CGPoint)first
                        secondPoint:(CGPoint)second
+                             color:(UIColor*)color
 {
     if (self = [super init]) {
         _firstPoint = first;
         _secondPoint = second;
+        _myColor = color;
     }
     return self;
 }

@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PaintView : UIView
 
+@property float redValue;
+@property float blueValue;
+@property float greenValue;
+
 - (void)clear;
 
 @end

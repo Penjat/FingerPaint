@@ -14,9 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) CGPoint firstPoint;
 @property (nonatomic, readonly) CGPoint secondPoint;
+@property (strong , nonatomic) UIColor *myColor;
 
 - (instancetype)initWithFirstPoint:(CGPoint)first
-                       secondPoint:(CGPoint)second;
+                       secondPoint:(CGPoint)second color:(UIColor*)color;
 
 @end
 
