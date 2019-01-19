@@ -68,32 +68,28 @@
                                     <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFZ-kH-meI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqV-iS-NJp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqV-iS-NJp">
                                 <rect key="frame" x="230" y="576" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Undo"/>
                                 <connections>
                                     <action selector="undoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBJ-E6-3Tw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pev-OU-tSx">
-                                <rect key="frame" x="186" y="576" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pev-OU-tSx">
+                                <rect key="frame" x="182" y="576" width="36" height="30"/>
                                 <state key="normal" title="Redo"/>
                                 <connections>
                                     <action selector="redoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I09-FD-L3R"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mEN-sn-eab">
-                                <rect key="frame" x="60" y="576" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mEN-sn-eab">
+                                <rect key="frame" x="60" y="575.5" width="51" height="31"/>
                                 <connections>
                                     <action selector="eraserPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="lCu-dW-Zjb"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eraser off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve9-G5-e1A">
-                                <rect key="frame" x="60" y="608" width="71" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eraser off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve9-G5-e1A">
+                                <rect key="frame" x="60" y="614.5" width="71" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -101,13 +97,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CqV-iS-NJp" firstAttribute="centerY" secondItem="S2D-Sf-MTn" secondAttribute="centerY" id="1T5-SG-4vF"/>
+                            <constraint firstItem="mEN-sn-eab" firstAttribute="centerY" secondItem="pev-OU-tSx" secondAttribute="centerY" id="HMb-oD-Q3S"/>
+                            <constraint firstItem="S2D-Sf-MTn" firstAttribute="leading" secondItem="CqV-iS-NJp" secondAttribute="trailing" constant="12" id="KTe-dL-piU"/>
                             <constraint firstItem="S2D-Sf-MTn" firstAttribute="top" secondItem="a5r-XM-Bt3" secondAttribute="bottom" constant="8" id="NL5-dJ-F4v"/>
+                            <constraint firstItem="CqV-iS-NJp" firstAttribute="leading" secondItem="pev-OU-tSx" secondAttribute="trailing" constant="12" id="PYk-DT-QaQ"/>
                             <constraint firstItem="lDL-Nt-7mP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Q0v-Wz-bTw"/>
                             <constraint firstItem="a5r-XM-Bt3" firstAttribute="top" secondItem="lDL-Nt-7mP" secondAttribute="bottom" constant="8" id="Zoe-TM-5SL"/>
+                            <constraint firstItem="mEN-sn-eab" firstAttribute="leading" secondItem="a5r-XM-Bt3" secondAttribute="leading" id="aFl-KD-iok"/>
                             <constraint firstItem="S2D-Sf-MTn" firstAttribute="trailing" secondItem="a5r-XM-Bt3" secondAttribute="trailing" id="cYX-8H-jaD"/>
                             <constraint firstItem="a5r-XM-Bt3" firstAttribute="centerX" secondItem="lDL-Nt-7mP" secondAttribute="centerX" id="dzx-0d-cWO"/>
                             <constraint firstItem="lDL-Nt-7mP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hsj-r5-u3w"/>
+                            <constraint firstItem="Ve9-G5-e1A" firstAttribute="leading" secondItem="mEN-sn-eab" secondAttribute="leading" id="jNF-rr-cuE"/>
+                            <constraint firstItem="pev-OU-tSx" firstAttribute="centerY" secondItem="CqV-iS-NJp" secondAttribute="centerY" id="m2V-QX-TwI"/>
                             <constraint firstItem="a5r-XM-Bt3" firstAttribute="width" secondItem="lDL-Nt-7mP" secondAttribute="width" multiplier="0.85" id="r4j-TE-Umt"/>
+                            <constraint firstItem="Ve9-G5-e1A" firstAttribute="top" secondItem="mEN-sn-eab" secondAttribute="bottom" constant="8" id="xhc-zL-fSc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
