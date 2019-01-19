@@ -31,6 +31,9 @@
     self.paintView.greenValue = sender.value;
     [self updateColorPreview ];
 }
+- (IBAction)undoPressed:(id)sender {
+    [self.paintView undo];
+}
 
 - (IBAction)clear {
     [self.paintView clear];

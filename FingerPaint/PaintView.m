@@ -116,5 +116,9 @@
     [path stroke];
 }
 
+-(void)undo{
+    [self.lines removeLastObject];
+    [self setNeedsDisplay];
+}
 
 @end

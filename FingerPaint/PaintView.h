@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property float greenValue;
 
 - (void)clear;
-
+-(void)undo;
 @end
 
 NS_ASSUME_NONNULL_END
