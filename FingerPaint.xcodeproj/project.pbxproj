@@ -17,6 +17,7 @@
 		0B91F5E121F27D77002CE536 /* PaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5E021F27D77002CE536 /* PaintViewController.m */; };
 		0B91F5E421F27D95002CE536 /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5E321F27D95002CE536 /* PaintView.m */; };
 		0B91F5EA21F281A4002CE536 /* LineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5E921F281A4002CE536 /* LineSegment.m */; };
+		0B91F5F021F2B815002CE536 /* LineContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B91F5EF21F2B815002CE536 /* LineContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		0B91F5E321F27D95002CE536 /* PaintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 		0B91F5E821F281A4002CE536 /* LineSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineSegment.h; sourceTree = "<group>"; };
 		0B91F5E921F281A4002CE536 /* LineSegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineSegment.m; sourceTree = "<group>"; };
+		0B91F5EE21F2B815002CE536 /* LineContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineContainer.h; sourceTree = "<group>"; };
+		0B91F5EF21F2B815002CE536 /* LineContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				0B91F5E321F27D95002CE536 /* PaintView.m */,
 				0B91F5E821F281A4002CE536 /* LineSegment.h */,
 				0B91F5E921F281A4002CE536 /* LineSegment.m */,
+				0B91F5EE21F2B815002CE536 /* LineContainer.h */,
+				0B91F5EF21F2B815002CE536 /* LineContainer.m */,
 				0B91F5B321F27D4B002CE536 /* Main.storyboard */,
 				0B91F5B621F27D4C002CE536 /* Assets.xcassets */,
 				0B91F5B821F27D4C002CE536 /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 				0B91F5BD21F27D4C002CE536 /* main.m in Sources */,
 				0B91F5E421F27D95002CE536 /* PaintView.m in Sources */,
 				0B91F5EA21F281A4002CE536 /* LineSegment.m in Sources */,
+				0B91F5F021F2B815002CE536 /* LineContainer.m in Sources */,
 				0B91F5E121F27D77002CE536 /* PaintViewController.m in Sources */,
 				0B91F5AF21F27D4B002CE536 /* AppDelegate.m in Sources */,
 			);

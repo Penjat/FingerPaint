@@ -10,13 +10,13 @@
 
 @implementation LineSegment
 - (instancetype)initWithFirstPoint:(CGPoint)first
-                       secondPoint:(CGPoint)second
-                             color:(UIColor*)color
-{
+                       secondPoint:(CGPoint)second{
+    
+    
     if (self = [super init]) {
         _firstPoint = first;
         _secondPoint = second;
-        _myColor = color;
+        
     }
     return self;
 }
