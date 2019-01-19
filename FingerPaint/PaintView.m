@@ -17,6 +17,7 @@
 
 @property (nonatomic) LineContainer *curLineContainer;
 
+
 @end
 
 @implementation PaintView
@@ -35,7 +36,10 @@
     
     
     UIColor *curColor = [UIColor colorWithRed:self.redValue green:self.greenValue blue:self.blueValue alpha:1.0];
-    
+    if(self.eraserOn){
+        curColor = UIColor.lightGrayColor;
+        
+    }
     LineContainer *lineContainer = [[LineContainer alloc]initWithColor:curColor];
     _curLineContainer = lineContainer;
     [self.lines addObject:lineContainer];

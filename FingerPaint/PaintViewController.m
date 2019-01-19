@@ -14,7 +14,9 @@
 @property (weak, nonatomic) IBOutlet PaintView *paintView;
 
 @property (weak, nonatomic) IBOutlet UIView *colorPreview;
+@property (weak, nonatomic) IBOutlet UISwitch *eraseToggle;
 
+@property (weak, nonatomic) IBOutlet UILabel *eraserLabel;
 
 @end
 
@@ -37,6 +39,17 @@
 - (IBAction)redoPressed:(id)sender {
      [self.paintView redo];
 }
+- (IBAction)eraserPressed:(id)sender {
+    if(self.eraseToggle.isOn){
+        self.eraserLabel.text = @"eraser on";
+        [self.paintView setEraserOn:YES];
+        return;
+    }
+    self.eraserLabel.text = @"eraser off";
+    [self.paintView setEraserOn:NO];
+    
+    
+}
 
 - (IBAction)clear {
     [self.paintView clear];
@@ -49,6 +62,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+
 
 /*
 #pragma mark - Navigation

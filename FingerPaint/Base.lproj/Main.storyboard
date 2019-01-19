@@ -84,6 +84,20 @@
                                     <action selector="redoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I09-FD-L3R"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mEN-sn-eab">
+                                <rect key="frame" x="60" y="576" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="eraserPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="lCu-dW-Zjb"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eraser off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve9-G5-e1A">
+                                <rect key="frame" x="60" y="608" width="71" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -99,6 +113,8 @@
                     </view>
                     <connections>
                         <outlet property="colorPreview" destination="0tX-QL-UGE" id="3Sd-pa-dgr"/>
+                        <outlet property="eraseToggle" destination="mEN-sn-eab" id="J34-WN-l5z"/>
+                        <outlet property="eraserLabel" destination="Ve9-G5-e1A" id="ULe-K9-Nkd"/>
                         <outlet property="paintView" destination="lDL-Nt-7mP" id="JrR-Aq-9LP"/>
                     </connections>
                 </viewController>

@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property float blueValue;
 @property float greenValue;
 
+@property BOOL eraserOn;
+
 - (void)clear;
 -(void)undo;
 -(void)redo;
