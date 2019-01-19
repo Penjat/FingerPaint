@@ -76,6 +76,14 @@
                                     <action selector="undoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBJ-E6-3Tw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pev-OU-tSx">
+                                <rect key="frame" x="186" y="576" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Redo"/>
+                                <connections>
+                                    <action selector="redoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I09-FD-L3R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

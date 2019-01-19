@@ -13,6 +13,7 @@
 @interface PaintView()
 
 @property (nonatomic) NSMutableArray<LineContainer *> *lines;
+@property (nonatomic) NSMutableArray<LineContainer *> *redoList;
 
 @property (nonatomic) LineContainer *curLineContainer;
 
@@ -24,6 +25,7 @@
 {
     if (self = [super initWithCoder:aDecoder]) {
         _lines = [[NSMutableArray alloc]init];
+        _redoList = [[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -117,7 +119,19 @@
 }
 
 -(void)undo{
+    if(self.lines.count == 0){
+        return;
+    }
+    [self.redoList addObject:[self.lines lastObject]];
     [self.lines removeLastObject];
+    [self setNeedsDisplay];
+}
+-(void)redo{
+    if(self.redoList.count == 0){
+        return;
+    }
+    [self.lines addObject:[self.redoList lastObject]];
+    [self.redoList removeLastObject];
     [self setNeedsDisplay];
 }
 

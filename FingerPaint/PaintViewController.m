@@ -34,6 +34,9 @@
 - (IBAction)undoPressed:(id)sender {
     [self.paintView undo];
 }
+- (IBAction)redoPressed:(id)sender {
+     [self.paintView redo];
+}
 
 - (IBAction)clear {
     [self.paintView clear];
